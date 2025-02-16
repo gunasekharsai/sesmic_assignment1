@@ -27,7 +27,7 @@ X_scaled = scaler.fit_transform(X)
 
 
 # Step 1: Determine eps using KNN plot
-neighbors = NearestNeighbors(n_neighbors=5)  # min_samples=5
+neighbors = NearestNeighbors(n_neighbors=10)  # min_samples=5
 neighbors_fit = neighbors.fit(X_scaled)
 distances, indices = neighbors_fit.kneighbors(X_scaled)
 
